@@ -1,0 +1,7 @@
+services:
+   mru-exp-img:
+      volumes:
+         - .:/app:ro
+      environment:
+         - NODE_ENV=development
+      command: npm run dev
