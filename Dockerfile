@@ -1,5 +1,5 @@
 # Base Image
-FROM node:18-alpine
+FROM node:20.0.0
 
 # Set the Working Directory
 WORKDIR /app
@@ -26,4 +26,5 @@ EXPOSE ${PORT}
 
 # Run server
 CMD [ "node", "server.js" ]
+
 #CMD [ "npm", "run", "dev" ]
